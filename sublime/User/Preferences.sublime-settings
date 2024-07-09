@@ -1,0 +1,16 @@
+{
+	"font_size": 15,
+	"update_check": false,
+	"theme": "Adaptive.sublime-theme",
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+
+	"color_scheme": "Mariana.sublime-color-scheme",
+	"word_wrap": "true",
+    // "font_face": "JetBrains Mono", // Font Family
+
+
+	"index_files": true,
+}

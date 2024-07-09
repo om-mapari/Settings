@@ -1,0 +1,89 @@
+[
+	// toggle sidebar and panel and find & replace
+	{ "keys": ["ctrl+o"], "command": "toggle_side_bar" },
+	{ "keys": ["ctrl+;"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+    { "keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+
+
+    // BUILD
+    { "keys": ["ctrl+'"], "command": "build" },
+    { "keys": ["alt+'"], "command": "build" },
+	{ "keys": ["ctrl+b"], "command": "cancel_build" },
+
+
+	// Basic
+	// { "keys": ["ctrl+u"], "command": "undo" },
+
+
+	// OCCERANCE
+	{ "keys": ["alt+d"], "command": "find_under_expand" }, // next occ
+	{ "keys": ["ctrl+e", "ctrl+d"], "command": "find_under_expand_skip" },
+	{ "keys": ["alt+e", "alt+d"], "command": "find_under_expand_skip" },
+
+
+	//* MOVEMENT left Right up down 
+ //    // 1) by char
+	// { "keys": ["alt+h"], "command": "move", "args": {"by": "characters", "forward": false} },
+	// // { "keys": ["alt+shift+l"], "command": "move", "args": {"by": "characters", "forward": true} },
+	// // 2) by words
+	// // { "keys": ["alt+i"], "command": "move", "args": {"by": "lines", "forward": false} },
+ // 	// { "keys": ["alt+k"], "command": "move", "args": {"by": "lines", "forward": true} },
+	// { "keys": ["alt+j"], "command": "move", "args": {"by": "words", "forward": false} },
+	// { "keys": ["alt+l"], "command": "move", "args": {"by": "word_ends", "forward": true} },
+ 	
+ 	//* MOVEMENT left Right up down 
+    // 1) by char
+	{ "keys": ["ctrl+h"], "command": "move", "args": {"by": "characters", "forward": false} },
+	// { "keys": ["ctrl+shift+l"], "command": "move", "args": {"by": "characters", "forward": true} },
+	// 2) by words
+	{ "keys": ["ctrl+i"], "command": "move", "args": {"by": "lines", "forward": false} },
+ 	{ "keys": ["ctrl+k"], "command": "move", "args": {"by": "lines", "forward": true} },
+	{ "keys": ["ctrl+j"], "command": "move", "args": {"by": "words", "forward": false} },
+	{ "keys": ["ctrl+l"], "command": "move", "args": {"by": "word_ends", "forward": true} },
+
+    // SCROLL UP DOWN
+ //    { "keys": ["ctrl+i"], "command": "scroll_lines", "args": {"amount": 1.0 } },
+	// { "keys": ["ctrl+k"], "command": "scroll_lines", "args": {"amount": -1.0 } },
+
+    // alt + shift + m
+	{ "keys": ["alt+shift+m"], "command": "expand_selection", "args": {"to": "brackets"} },
+	{ "keys": ["alt+m"], "command": "move_to", "args": {"to": "brackets"} },
+	
+	// MOVE-LINE 
+	{ "keys": ["alt+i"], "command": "swap_line_up" },
+	{ "keys": ["alt+k"], "command": "swap_line_down"},
+
+	// COPY-LINE 
+	{ "keys": ["alt+,"], "command": "duplicate_line" },
+	{ "keys": ["ctrl+,"], "command": "duplicate_line" },
+
+
+
+
+    // ENTER COMMAND
+	{ "keys": ["alt+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"}, "context":
+		[
+			{ "key": "overlay_has_focus", "operator": "equal", "operand": false },
+		],
+	},
+
+	// SELECTION => ctrl + shift + {key}
+ 	// char select left right
+ 	{ "keys": ["alt+shift+j"], "command": "move", "args": {"by": "words", "forward": false, "extend": true} },
+	{ "keys": ["alt+shift+l"], "command": "move", "args": {"by": "word_ends", "forward": true, "extend": true} },
+	// line selection including line 
+	{ "keys": ["alt+shift+k"], "command": "expand_selection", "args": {"to": "line"} },
+	{ "keys": ["alt+shift+i"], "command": "move", "args": {"by": "lines", "forward": false, "extend": true} },
+	// no use : { "keys": ["alt+shift+k"], "command": "move", "args": {"by": "lines", "forward": true, "extend": true} },
+	
+ 	// SELECTION => alt + shift + {key}
+ 	// char select left right
+ 	{ "keys": ["ctrl+shift+j"], "command": "move", "args": {"by": "words", "forward": false, "extend": true} },
+	{ "keys": ["ctrl+shift+l"], "command": "move", "args": {"by": "word_ends", "forward": true, "extend": true} },
+	// line selection including line 
+	{ "keys": ["ctrl+shift+k"], "command": "expand_selection", "args": {"to": "line"} },
+	{ "keys": ["ctrl+shift+i"], "command": "move", "args": {"by": "lines", "forward": false, "extend": true} },
+	// { "keys": ["ctrl+shift+k"], "command": "move", "args": {"by": "lines", "forward": true, "extend": true} },
+]
+
+// jk

@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+for(int j = 0; j < $1; j++)
+{
+    $2
+}
+]]></content>
+  <tabTrigger>forj</tabTrigger>
+  <description>for(int j)</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>
+

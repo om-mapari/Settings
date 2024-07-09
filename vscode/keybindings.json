@@ -1,0 +1,121 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+o",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+'",
+        "command": "code-runner.run"
+    },
+    {
+        "key": "ctrl+oem_1",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+,",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+
+    // string selection
+    {
+        "key": "ctrl+m",
+        "command": "editor.action.smartSelect.expand",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+right",
+        "command": "-editor.action.smartSelect.expand",
+        "when": "editorTextFocus"
+    },
+
+    // settings
+    {
+        "key": "ctrl+shift+oem_comma",
+        "command": "workbench.action.openSettings"
+    },
+    {
+        "key": "ctrl+oem_comma",
+        "command": "-workbench.action.openSettings"
+    },
+
+    // rename symbol
+    {
+        "key": "ctrl+shift+d",
+        "command": "editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "f2",
+        "command": "-editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+
+    // look implementation
+    {
+        "key": "ctrl+shift+l",
+        "command": "editor.action.peekImplementation",
+        "when": "editorHasImplementationProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    },
+    {
+        "key": "ctrl+shift+f12",
+        "command": "-editor.action.peekImplementation",
+        "when": "editorHasImplementationProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    },
+
+    // move like up and down
+    {
+        "key": "alt+k",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+down",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+i",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+up",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+
+    // Mongodb
+    {
+        "key": "ctrl+enter",
+        "command": "mdb.runAllPlaygroundBlocks",
+        "when": "editorLangId == 'mongodb'"
+    },
+    {
+        "key": "ctrl+alt+r",
+        "command": "-mdb.runAllPlaygroundBlocks",
+        "when": "editorLangId == 'mongodb'"
+    }
+
+    // {
+    //     "key": "shift+alt+down",
+    //     "command": "-editor.action.copyLinesDownAction",
+    //     "when": "editorTextFocus && !editorReadonly"
+    // },
+    // {
+    //     "key": "shift+up",
+    //     "command": "editor.action.copyLinesUpAction",
+    //     "when": "editorTextFocus && !editorReadonly"
+    // },
+    // {
+    //     "key": "shift+alt+up",
+    //     "command": "-editor.action.copyLinesUpAction",
+    //     "when": "editorTextFocus && !editorReadonly"
+    // },
+
+    // {
+    //     "key": "ctrl+j",
+    //     "command": "-workbench.action.togglePanel"
+    // },
+]

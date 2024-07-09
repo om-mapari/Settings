@@ -1,0 +1,233 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "editor.mouseWheelZoom": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.languageServer": "Default",
+    "explorer.confirmDelete": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.exe": true,
+        "**/.factorypath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/*.class": true,
+        "**/*.exe": true
+    },
+    "[json]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace",
+        // "gitlens.codeLens.scopes": [
+        //     "document"
+        // ],
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "files.defaultLanguage": "cpp",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": ["comment", "punctuation.definition.comment"],
+                "settings": {
+                    "fontStyle": "italic ",
+                    // "fontStyle": "italic bold",
+                    "foreground": "#4c9a2a"
+                }
+            }
+        ]
+    },
+    "launch": {
+        "configurations": [],
+        "compounds": []
+    },
+    "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName} OM ",
+    "better-comments.tags": [
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": true,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "*",
+            "color": "#11f505",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        }
+    ],
+    "C_Cpp.errorSquiggles": "enabled",
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "code-runner.saveFileBeforeRun": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "jupyter.askForKernelRestart": false,
+    "editor.codeActionsOnSave": {},
+    "git.suggestSmartCommit": false,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "explorer.confirmDragAndDrop": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "editor.linkedEditing": true,
+    "C_Cpp.default.enableConfigurationSquiggles": false,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.runInTerminal": true,
+    "prettier.tabWidth": 4,
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "better-comments.highlightPlainText": true,
+    "security.workspace.trust.untrustedFiles": "newWindow",
+    "notebook.lineNumbers": "on",
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "githubPullRequests.createOnPublishBranch": "never",
+    "update.mode": "manual",
+    "thunder-client.htmlView": "Preview",
+    "extensions.autoCheckUpdates": false,
+    // "C_Cpp.updateChannel": "Insiders"
+
+    "npm.keybindingsChangedWarningShown": true,
+    "code-runner.executorMap": {
+        "javascript": "nodemon",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        // "cpp": "cd $dirWithoutTrailingSlash && g++ -std=c++14 $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
+
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "python -u",
+        "perl": "perl",
+        "perl6": "perl6",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "racket",
+        "scheme": "csi -script",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "dart": "dart",
+        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "haskell": "runhaskell",
+        "nim": "nim compile --verbosity:0 --hints:off --run",
+        "lisp": "sbcl --script",
+        "kit": "kitc --run",
+        "v": "v run",
+        "sass": "sass --style expanded",
+        "scss": "scss --style expanded",
+        "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+        "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "sml": "cd $dir && sml $fileName"
+    },
+    "vsicons.dontShowNewVersionMessage": true,
+    "tabnine.experimentalAutoImports": true,
+    "[python]": {},
+    "mdb.confirmRunAll": false,
+    "code-runner.terminalRoot": "/",
+
+    // My settings
+
+    "editor.fontFamily": "JetBrains Mono", // Font Family
+    // "editor.fontFamily": "Source Code Pro",
+    // "editor.fontFamily": "Fira Code", // Font Family
+    "editor.fontWeight": "300",
+    // "editor.fontWeight": "normal",
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 16,
+
+    "editor.lineHeight": 24, // lineHeight
+    "explorer.decorations.badges": false,
+
+    // VScode Theme
+    "workbench.colorTheme": "GitHub Dark",
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "boot-java.rewrite.reconcile": true,
+    "redhat.telemetry.enabled": true,
+    "workbench.editor.empty.hint": "hidden",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "extensions.autoUpdate": false,
+    "amazonQ.telemetry": false,
+    "explorer.confirmPasteNative": false
+    // "workbench.colorTheme": "Visual Studio Dark - C++",
+
+}
