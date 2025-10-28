@@ -1,0 +1,1 @@
+C:\Users\mapar\AppData\Roaming\FlowLauncher
