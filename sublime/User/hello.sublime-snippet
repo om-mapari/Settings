@@ -1,6 +1,5 @@
 <snippet>
   <content><![CDATA[
-#include <iostream>
 using namespace std;
 #include <bits/stdc++.h>
 

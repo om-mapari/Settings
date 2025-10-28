@@ -1,15 +1,16 @@
 {
     "workbench.iconTheme": "vscode-icons",
-    "editor.mouseWheelZoom": false,
+    "editor.mouseWheelZoom": true,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "python.languageServer": "Default",
     "explorer.confirmDelete": false,
+    "workbench.activityBar.orientation": "vertical",
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
 
-    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left"
@@ -21,7 +22,8 @@
         "**/.project": true,
         "**/.settings": true,
         "**/*.class": true,
-        "**/*.exe": true
+        "**/*.exe": true,
+        "**/__pycache__/": true
     },
     "[json]": {
         "editor.quickSuggestions": {
@@ -141,9 +143,10 @@
 
     "npm.keybindingsChangedWarningShown": true,
     "code-runner.executorMap": {
-        "javascript": "nodemon",
+        "javascript": "node",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
         "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+
         "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         // "cpp": "cd $dirWithoutTrailingSlash && g++ -std=c++14 $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
 
@@ -210,13 +213,13 @@
     // "editor.fontWeight": "normal",
     "editor.fontLigatures": true,
     "terminal.integrated.fontFamily": "JetBrains Mono",
-    "editor.fontSize": 16,
+    "editor.fontSize": 12,
 
     "editor.lineHeight": 24, // lineHeight
     "explorer.decorations.badges": false,
 
     // VScode Theme
-    "workbench.colorTheme": "GitHub Dark",
+    "workbench.colorTheme": "GitHub Dark Default",
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -227,7 +230,37 @@
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "extensions.autoUpdate": false,
     "amazonQ.telemetry": false,
-    "explorer.confirmPasteNative": false
+    "explorer.confirmPasteNative": false,
+    "amazonQ.suppressPrompts": {
+        "codeWhispererConnectionExpired": true
+    },
+    "security.promptForLocalFileProtocolHandling": false,
+    "codium.codeCompletion.enable": false,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
     // "workbench.colorTheme": "Visual Studio Dark - C++",
-
+    "code-runner.ignoreSelection": true,
+    "editor.accessibilityPageSize": 12,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "debug.javascript.autoAttachFilter": "disabled",
+    "editor.renderWhitespace": "none",
+    "[pip-requirements]": {},
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "remote.SSH.remotePlatform": {
+        "135.13.8.201": "linux",
+        "20.41.249.65": "linux"
+    },
+    "markdown-preview-enhanced.previewTheme": "atom-dark.css",
+    "roo-cline.allowedCommands": [
+        "*"
+    ],
+    "roo-cline.deniedCommands": []
 }

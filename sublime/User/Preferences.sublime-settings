@@ -1,5 +1,5 @@
 {
-	"font_size": 15,
+	"font_size": 20,
 	"update_check": false,
 	"theme": "Adaptive.sublime-theme",
 	"ignored_packages":
@@ -13,4 +13,5 @@
 
 
 	"index_files": true,
+	/*"update_check": false*/
 }
