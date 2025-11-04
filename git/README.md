@@ -1,5 +1,4 @@
 ---
-
 ## ⚙️ **Git Setup After Installation**
 
 ### 🧾 1️⃣ Configure your identity
