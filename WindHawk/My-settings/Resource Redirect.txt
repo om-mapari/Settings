@@ -1,0 +1,8 @@
+{
+    "iconTheme": "Sweet Rainbow|themes/icons/niivu/Sweet-Rainbow.zip",
+    "themePaths[0]": "",
+    "redirectionResourcePaths[0].original": "",
+    "redirectionResourcePaths[0].redirect": "",
+    "allResourceRedirect": 1,
+    "themeFolder": ""
+}
