@@ -1,0 +1,21 @@
+{
+    "TriggerActionOptions[0].KeyboardTriggers[0]": "none",
+    "TriggerActionOptions[0].KeyboardTriggers[1]": "lctrl",
+    "TriggerActionOptions[0].KeyboardTriggers[2]": "lshift",
+    "TriggerActionOptions[0].KeyboardTriggers[3]": "lalt",
+    "TriggerActionOptions[0].KeyboardTriggers[4]": "win",
+    "TriggerActionOptions[0].KeyboardTriggers[5]": "rctrl",
+    "TriggerActionOptions[0].KeyboardTriggers[6]": "rshift",
+    "TriggerActionOptions[0].KeyboardTriggers[7]": "ralt",
+    "TriggerActionOptions[0].MouseTrigger": "none",
+    "TriggerActionOptions[0].Action": "ACTION_NOTHING",
+    "TriggerActionOptions[0].AdditionalArgs": "arg1;arg2",
+    "oldTaskbarOnWin11": 0,
+    "TriggerActionOptions[1].KeyboardTriggers[0]": "none",
+    "TriggerActionOptions[1].MouseTrigger": "leftDouble",
+    "TriggerActionOptions[1].Action": "ACTION_TASK_MANAGER",
+    "eagerTriggerEvaluation": 0,
+    "TriggerActionOptions[2].KeyboardTriggers[0]": "none",
+    "TriggerActionOptions[2].MouseTrigger": "right",
+    "TriggerActionOptions[2].Action": "ACTION_SHOW_DESKTOP"
+}

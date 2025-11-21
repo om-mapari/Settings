@@ -1,5 +1,5 @@
 {
-	"font_size": 18,
+	"font_size": 14,
 	"update_check": false,
 	"theme": "GitHub Dark.sublime-theme",
 	"ignored_packages":
@@ -15,6 +15,6 @@
 	"index_files": true,
 	/*"update_check": false*/
 
-	"caret_style": "phase"
+	"caret_style": "phase",
 
 }
