@@ -1,12 +1,26 @@
 # 🚀 The Ultimate Windows Dev Setup (That Actually Doesn't Suck)
 
-> *"I spent 7 years in the trenches configuring this so you don't have to suffer through Windows defaults"*
+> "I’ve spent 7 years tweaking Windows so you don’t have to fight with the defaults." ⭐
 
-**Windows 11 development environment setup** with PowerShell 7, VSCode, Git, and Windows Terminal configurations. Complete **Windows developer tools** collection including WindHawk customization, Starship prompt, and productivity apps. Perfect for **Windows 10/11 setup**, **developer workflow optimization**, and **Windows customization**.
+Look, I get it. You just installed Windows and now you're staring at that Fisher-Price UI wondering why your terminal looks like it's from 2003. Been there. This repo is everything I wish existed when I started - PowerShell that doesn't make you want to cry, a terminal that actually looks good, and configs that just work.
 
-Welcome to my digital dojo. This is where Windows meets productivity, where bloat goes to die, and where your terminal finally looks like it belongs in 2026. Clone this, copy the configs, and ascend to power user status in under an hour.
+Clone it. Copy the stuff. Your setup will stop sucking in about an hour.
 
-**Keywords:** Windows development setup, PowerShell profile, VSCode configuration, Windows Terminal themes, Git SSH setup, Windows 11 customization, developer productivity tools, Windows debloat, Starship prompt, zoxide, WindHawk mods
+## 🧠 My Rules
+
+- If it takes more than a second to load, it's bloat
+- Keyboard shortcuts > mouse. Always
+- Dark mode everything. Light mode users scare me
+- If you're doing something twice, automate it
+- Every tool here earned its spot
+
+## ⚠️ Heads Up
+
+- Backup your configs first. Or don't, I'm not your mom
+- Some stuff needs admin rights
+- WindHawk mods might break on Windows updates (still worth it)
+- The `lazyg` command is dangerous if you're not paying attention
+- Once you start using zoxide, regular `cd` will feel broken
 
 ## � The Arsenal
 
@@ -24,9 +38,9 @@ Welcome to my digital dojo. This is where Windows meets productivity, where bloa
 | **[Fonts](fonts/)** | JetBrains Mono Nerd Font. Ligatures that make you feel smart |
 | **[Winutil](Winutil/)** | Chris Titus's Windows debloater. Cortana? Never heard of her |
 
-## 🎯 The "I Just Wiped My PC" Speedrun (Windows Fresh Install Guide)
+## 🎯 Quick Start (aka "I Just Wiped My PC")
 
-### Level 1: Essential Windows Developer Tools Installation
+### Step 1: Get the essentials
 ```powershell
 # First, get a real package manager
 winget install marticliment.UniGetUI
@@ -39,7 +53,7 @@ winget install Git.Git                   # You know what this is
 winget install Microsoft.VisualStudioCode # The one true editor (fight me)
 ```
 
-### Level 2: PowerShell 7 Profile Setup & Configuration
+### Step 2: Make PowerShell not suck
 ```powershell
 # Copy the good stuff
 Copy-Item "powershell/Microsoft.PowerShell_profile.ps1" $PROFILE -Force
@@ -54,7 +68,7 @@ Copy-Item "powershell/starship.toml" (Split-Path $PROFILE) -Force
 # z github    → teleports to your github folder
 ```
 
-### Level 3: Git Configuration & SSH Key Setup for GitHub
+### Step 3: Git setup (the right way)
 ```bash
 # Tell Git who you are (or who you pretend to be)
 git config --global user.name "Your Name"
@@ -72,7 +86,7 @@ ssh -T git@github.com
 # "Hi username!" ← If you see this, you're in
 ```
 
-### Level 4: VSCode Settings & Extensions Configuration
+### Step 4: VSCode but actually good
 ```powershell
 # Deploy the configs
 Copy-Item "vscode/settings.json" "$env:APPDATA\Code\User\" -Force
@@ -85,9 +99,9 @@ Copy-Item "vscode/keybindings.json" "$env:APPDATA\Code\User\" -Force
 # - No annoying confirmations (we live dangerously here)
 ```
 
-## 🎨 Windows 11 UI Customization & Theming
+## 🎨 Making Windows Look Less... Windows
 
-### WindHawk: Windows 11 Taskbar & Start Menu Customization
+### WindHawk (because the default UI is an insult)
 Install [WindHawk](https://windhawk.net/) then grab these mods:
 
 - **Windows 11 Taskbar Styler** - DockLike theme (macOS who?)
@@ -97,7 +111,7 @@ Install [WindHawk](https://windhawk.net/) then grab these mods:
 - **Taskbar Volume Control** - Scroll on taskbar to adjust volume (mind = blown)
 - **Better File Sizes** - "1.5 GB" instead of "1,572,864 KB" (thank you)
 
-### Windows Registry Tweaks & System Optimization
+### Random Windows tweaks that should be default
 ```powershell
 # Enable battery icon (because Microsoft hid it for... reasons?)
 vivetool /enable /id:56328729,48433719
@@ -108,7 +122,7 @@ DEL /A /Q "%localappdata%\IconCache.db"
 start explorer.exe
 ```
 
-## 🛠️ The Toolkit (Apps That Don't Suck)
+## 🛠️ Apps I Actually Use
 
 **Productivity Tier:**
 - **UniGetUI** - All package managers in one place. Winget + Scoop + Chocolatey = ❤️
@@ -127,9 +141,9 @@ start explorer.exe
 - **Winutil** - Chris Titus's debloater. Removes the bloat, keeps the OS
 - **RevoUninstaller** - Uninstall things like you mean it
 
-## 💎 The Good Stuff (Features That'll Make You Smile)
+## 💎 Cool Stuff You'll Actually Use
 
-### PowerShell Profile (The Terminal You Deserve)
+### PowerShell Profile
 - **Unix commands on Windows** - `grep`, `sed`, `tail`, `which` (Linux users: feel at home)
 - **Git shortcuts** - `gs`, `ga`, `gc`, `lazyg` (commit messages are overrated anyway)
 - **Zoxide** - `z github` teleports you there. No more `cd ../../..`
@@ -137,7 +151,7 @@ start explorer.exe
 - **Syntax highlighting** - Your commands now have RGB
 - **Lightning fast** - Optimized to load faster than your coffee machine
 
-### VSCode Config (The Setup Tax)
+### VSCode Config
 - **JetBrains Mono** - Ligatures that make `=>` look like →
 - **GitHub Dark** - Because light mode is a war crime
 - **Code Runner** - Run code without leaving the editor (F5 goes brrr)
@@ -145,7 +159,7 @@ start explorer.exe
 - **Better comments** - `// TODO` in orange, `// !` in red, `// ?` in blue
 - **Git Bash terminal** - Because cmd.exe is from 1987
 
-### WindHawk Customization (Windows 11 Makeover)
+### WindHawk Mods
 - **DockLike taskbar** - Centered, transparent, actually good-looking
 - **Custom notifications** - No more Windows 10 vibes
 - **Middle-click to close** - Close windows from taskbar like a power user
@@ -171,61 +185,28 @@ Settings/
 └── README.md            # You are here
 ```
 
-## 🧠 The Philosophy
+## 🎓 Tips
 
-- **Fast AF** - If it takes >1 second to load, it's bloat
-- **Keyboard > Mouse** - Touching the mouse is admitting defeat
-- **Dark Mode Everything** - Light mode is for psychopaths
-- **Automate or Die** - If you do it twice, script it
-- **No Bloat** - Every feature must earn its place
+1. Run `Show-Help` in PowerShell to see all the shortcuts
+2. Edit `starship.toml` if you want different colors
+3. Add your own aliases to `$PROFILE` - it's just a PowerShell script
+4. Use `z` instead of `cd` everywhere. After a week it'll know where you want to go
+5. Middle-click taskbar icons to close apps. You'll never right-click again
 
-## ⚠️ Warning Labels
+## 🙏 Credits
 
-- Backup your configs before copying (or don't, I'm not your mom)
-- Some tweaks need admin rights (run as admin or cry)
-- WindHawk mods can break on Windows updates (worth it)
-- The `lazyg` command is dangerous in the right hands
-- Once you use zoxide, regular `cd` feels like walking backwards
-
-## 🎓 Pro Tips
-
-1. **Learn the shortcuts** - `Show-Help` in PowerShell shows everything
-2. **Customize the colors** - Edit `starship.toml` to match your vibe
-3. **Add your own aliases** - Edit `$PROFILE` and go wild
-4. **Use `z` everywhere** - After a week, it knows where you want to go
-5. **Middle-click taskbar** - Close apps without right-clicking like a caveman
-
-## 🙏 Standing on the Shoulders of Giants
-
-- PowerShell profile inspired by [Chris Titus Tech](https://github.com/ChrisTitusTech/powershell-profile) (the GOAT)
-- WindHawk mods from the [WindHawk community](https://windhawk.net/) (doing God's work)
-- Starship prompt from [starship.rs](https://starship.rs/) (Rust supremacy)
-- Zoxide from [ajeetdsouza](https://github.com/ajeetdsouza/zoxide) (cd but better)
-
----
-
-## 📊 Related Topics & Tags
-
-`windows-development` `powershell-profile` `vscode-settings` `windows-terminal` `git-configuration` `windows-customization` `developer-tools` `productivity-setup` `windows-11-tweaks` `starship-prompt` `zoxide` `windhawk` `windows-debloat` `dev-environment` `dotfiles` `windows-setup-guide`
-
-## 🔗 Useful Resources
-
-- [PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)
-- [VSCode Setup Guide](https://code.visualstudio.com/docs/setup/windows)
-- [Git for Windows](https://git-scm.com/download/win)
-- [Windows Terminal Documentation](https://docs.microsoft.com/en-us/windows/terminal/)
-- [WindHawk Mods Library](https://windhawk.net/)
+Shoutout to the people who built the tools that make this possible:
+- [Chris Titus Tech](https://github.com/ChrisTitusTech/powershell-profile) for the PowerShell profile that started it all
+- [WindHawk community](https://windhawk.net/) for making Windows actually customizable
+- [Starship](https://starship.rs/) for the best terminal prompt ever made
+- [ajeetdsouza](https://github.com/ajeetdsouza/zoxide) for fixing `cd`
 
 ---
 
 <div align="center">
 
-**⚡ Crafted with caffeine and spite for Windows defaults ⚡**
+**Made with caffeine and spite for Windows defaults**
 
-*"It's not about the destination, it's about optimizing the journey"*
-
-**Star this if it saved you from Windows hell** ⭐
-
-### 🌟 Perfect for: Windows developers, DevOps engineers, system administrators, power users, and anyone tired of default Windows configurations
+*Star this if it saved you some pain* ⭐
 
 </div>
