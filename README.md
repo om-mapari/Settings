@@ -8,7 +8,7 @@ Welcome to my digital dojo. This is where Windows meets productivity, where bloa
 
 | Tool | What It Does (In Human) |
 |------|-------------|
-| **[PowerShell](powershell/)** | Your terminal but on steroids. 763ms boot time because life's too short |
+| **[PowerShell](powershell/)** | Your terminal but on steroids. Blazing fast because life's too short |
 | **[WindHawk](WindHawk/)** | Makes Windows 11 look less like a Fisher-Price toy |
 | **[VSCode](vscode/)** | Where the magic happens. JetBrains Mono because we're fancy |
 | **[Git](git/)** | SSH keys, configs, and the ability to `git push --force` with confidence |
@@ -130,7 +130,7 @@ start explorer.exe
 - **Zoxide** - `z github` teleports you there. No more `cd ../../..`
 - **Tab completion** - Works for git, npm, docker, kubectl (press Tab, look smart)
 - **Syntax highlighting** - Your commands now have RGB
-- **763ms load time** - Faster than your coffee machine
+- **Lightning fast** - Optimized to load faster than your coffee machine
 
 ### VSCode Config (The Setup Tax)
 - **JetBrains Mono** - Ligatures that make `=>` look like →
@@ -202,7 +202,7 @@ Settings/
 
 **⚡ Crafted with caffeine and spite for Windows defaults ⚡**
 
-*"It's not about the destination, it's about optimizing the journey to 763ms"*
+*"It's not about the destination, it's about optimizing the journey"*
 
 **Star this if it saved you from Windows hell** ⭐
 
