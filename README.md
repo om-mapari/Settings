@@ -1,6 +1,6 @@
-# 🚀 The Ultimate Windows Dev Setup (That Actually Doesn't Suck)
+🚀 My Windows Setup for Development (After Years of Tweaking)
 
-> "I’ve spent 7 years tweaking Windows so you don’t have to fight with the defaults." ⭐
+> "I’ve spent 8 years tweaking Windows so you don’t have to fight with the defaults." ⭐
 
 Look, I get it. You just installed Windows and now you're staring at that Fisher-Price UI wondering why your terminal looks like it's from 2003. Been there. This repo is everything I wish existed when I started - PowerShell that doesn't make you want to cry, a terminal that actually looks good, and configs that just work.
 
