@@ -2,7 +2,11 @@
 
 > *"I spent 7 years in the trenches configuring this so you don't have to suffer through Windows defaults"*
 
+**Windows 11 development environment setup** with PowerShell 7, VSCode, Git, and Windows Terminal configurations. Complete **Windows developer tools** collection including WindHawk customization, Starship prompt, and productivity apps. Perfect for **Windows 10/11 setup**, **developer workflow optimization**, and **Windows customization**.
+
 Welcome to my digital dojo. This is where Windows meets productivity, where bloat goes to die, and where your terminal finally looks like it belongs in 2026. Clone this, copy the configs, and ascend to power user status in under an hour.
+
+**Keywords:** Windows development setup, PowerShell profile, VSCode configuration, Windows Terminal themes, Git SSH setup, Windows 11 customization, developer productivity tools, Windows debloat, Starship prompt, zoxide, WindHawk mods
 
 ## � The Arsenal
 
@@ -20,9 +24,9 @@ Welcome to my digital dojo. This is where Windows meets productivity, where bloa
 | **[Fonts](fonts/)** | JetBrains Mono Nerd Font. Ligatures that make you feel smart |
 | **[Winutil](Winutil/)** | Chris Titus's Windows debloater. Cortana? Never heard of her |
 
-## 🎯 The "I Just Wiped My PC" Speedrun
+## 🎯 The "I Just Wiped My PC" Speedrun (Windows Fresh Install Guide)
 
-### Level 1: Get The Good Stuff
+### Level 1: Essential Windows Developer Tools Installation
 ```powershell
 # First, get a real package manager
 winget install marticliment.UniGetUI
@@ -35,7 +39,7 @@ winget install Git.Git                   # You know what this is
 winget install Microsoft.VisualStudioCode # The one true editor (fight me)
 ```
 
-### Level 2: PowerShell Goes Brrr
+### Level 2: PowerShell 7 Profile Setup & Configuration
 ```powershell
 # Copy the good stuff
 Copy-Item "powershell/Microsoft.PowerShell_profile.ps1" $PROFILE -Force
@@ -50,7 +54,7 @@ Copy-Item "powershell/starship.toml" (Split-Path $PROFILE) -Force
 # z github    → teleports to your github folder
 ```
 
-### Level 3: Git Like You Mean It
+### Level 3: Git Configuration & SSH Key Setup for GitHub
 ```bash
 # Tell Git who you are (or who you pretend to be)
 git config --global user.name "Your Name"
@@ -68,7 +72,7 @@ ssh -T git@github.com
 # "Hi username!" ← If you see this, you're in
 ```
 
-### Level 4: VSCode But Better
+### Level 4: VSCode Settings & Extensions Configuration
 ```powershell
 # Deploy the configs
 Copy-Item "vscode/settings.json" "$env:APPDATA\Code\User\" -Force
@@ -81,9 +85,9 @@ Copy-Item "vscode/keybindings.json" "$env:APPDATA\Code\User\" -Force
 # - No annoying confirmations (we live dangerously here)
 ```
 
-## 🎨 Making Windows Look Less... Windows-y
+## 🎨 Windows 11 UI Customization & Theming
 
-### WindHawk: The UI Rebellion
+### WindHawk: Windows 11 Taskbar & Start Menu Customization
 Install [WindHawk](https://windhawk.net/) then grab these mods:
 
 - **Windows 11 Taskbar Styler** - DockLike theme (macOS who?)
@@ -93,7 +97,7 @@ Install [WindHawk](https://windhawk.net/) then grab these mods:
 - **Taskbar Volume Control** - Scroll on taskbar to adjust volume (mind = blown)
 - **Better File Sizes** - "1.5 GB" instead of "1,572,864 KB" (thank you)
 
-### Windows Tweaks (The Nuclear Option)
+### Windows Registry Tweaks & System Optimization
 ```powershell
 # Enable battery icon (because Microsoft hid it for... reasons?)
 vivetool /enable /id:56328729,48433719
@@ -200,6 +204,20 @@ Settings/
 
 ---
 
+## 📊 Related Topics & Tags
+
+`windows-development` `powershell-profile` `vscode-settings` `windows-terminal` `git-configuration` `windows-customization` `developer-tools` `productivity-setup` `windows-11-tweaks` `starship-prompt` `zoxide` `windhawk` `windows-debloat` `dev-environment` `dotfiles` `windows-setup-guide`
+
+## 🔗 Useful Resources
+
+- [PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)
+- [VSCode Setup Guide](https://code.visualstudio.com/docs/setup/windows)
+- [Git for Windows](https://git-scm.com/download/win)
+- [Windows Terminal Documentation](https://docs.microsoft.com/en-us/windows/terminal/)
+- [WindHawk Mods Library](https://windhawk.net/)
+
+---
+
 <div align="center">
 
 **⚡ Crafted with caffeine and spite for Windows defaults ⚡**
@@ -207,5 +225,7 @@ Settings/
 *"It's not about the destination, it's about optimizing the journey"*
 
 **Star this if it saved you from Windows hell** ⭐
+
+### 🌟 Perfect for: Windows developers, DevOps engineers, system administrators, power users, and anyone tired of default Windows configurations
 
 </div>
