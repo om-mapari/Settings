@@ -9,6 +9,7 @@ Welcome to my digital dojo. This is where Windows meets productivity, where bloa
 | Tool | What It Does (In Human) |
 |------|-------------|
 | **[PowerShell](powershell/)** | Your terminal but on steroids. Blazing fast because life's too short |
+| **[Terminal](terminal/)** | Windows Terminal config with custom themes (Firefly, GitHub Dark, OneDark) |
 | **[WindHawk](WindHawk/)** | Makes Windows 11 look less like a Fisher-Price toy |
 | **[VSCode](vscode/)** | Where the magic happens. JetBrains Mono because we're fancy |
 | **[Git](git/)** | SSH keys, configs, and the ability to `git push --force` with confidence |
@@ -152,6 +153,7 @@ start explorer.exe
 ```
 Settings/
 ├── powershell/          # The terminal that sparks joy
+├── terminal/            # Windows Terminal themes & settings
 ├── WindHawk/            # Windows 11 but pretty
 ├── vscode/              # Editor configs (the good stuff)
 ├── git/                 # SSH keys and Git wizardry

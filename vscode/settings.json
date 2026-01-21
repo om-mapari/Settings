@@ -9,20 +9,17 @@
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
-
-    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left"
     },
     "files.exclude": {
         "**/.classpath": true,
-        "**/.exe": true,
         "**/.factorypath": true,
         "**/.project": true,
         "**/.settings": true,
         "**/*.class": true,
-        "**/*.exe": true,
         "**/__pycache__/": true
     },
     "[json]": {
@@ -30,9 +27,6 @@
             "strings": true
         },
         "editor.suggest.insertMode": "replace",
-        // "gitlens.codeLens.scopes": [
-        //     "document"
-        // ],
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "files.defaultLanguage": "cpp",
@@ -42,7 +36,6 @@
                 "scope": ["comment", "punctuation.definition.comment"],
                 "settings": {
                     "fontStyle": "italic ",
-                    // "fontStyle": "italic bold",
                     "foreground": "#4c9a2a"
                 }
             }
@@ -104,7 +97,6 @@
     "[cpp]": {
         "editor.defaultFormatter": "ms-vscode.cpptools"
     },
-    "code-runner.saveFileBeforeRun": true,
     "git.autofetch": true,
     "git.confirmSync": false,
     "jupyter.askForKernelRestart": false,
@@ -120,7 +112,6 @@
     },
     "editor.linkedEditing": true,
     "C_Cpp.default.enableConfigurationSquiggles": false,
-    "code-runner.clearPreviousOutput": true,
     "code-runner.runInTerminal": true,
     "prettier.tabWidth": 4,
     "[c]": {
@@ -139,87 +130,22 @@
     "update.mode": "manual",
     "thunder-client.htmlView": "Preview",
     "extensions.autoCheckUpdates": false,
-    // "C_Cpp.updateChannel": "Insiders"
-
     "npm.keybindingsChangedWarningShown": true,
-    "code-runner.executorMap": {
-        "javascript": "node",
-        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
 
-        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        // "cpp": "cd $dirWithoutTrailingSlash && g++ -std=c++14 $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
-
-        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "php": "php",
-        "python": "python -u",
-        "perl": "perl",
-        "perl6": "perl6",
-        "ruby": "ruby",
-        "go": "go run",
-        "lua": "lua",
-        "groovy": "groovy",
-        "powershell": "powershell -ExecutionPolicy ByPass -File",
-        "bat": "cmd /c",
-        "shellscript": "bash",
-        "fsharp": "fsi",
-        "csharp": "scriptcs",
-        "vbscript": "cscript //Nologo",
-        "typescript": "ts-node",
-        "coffeescript": "coffee",
-        "scala": "scala",
-        "swift": "swift",
-        "julia": "julia",
-        "crystal": "crystal",
-        "ocaml": "ocaml",
-        "r": "Rscript",
-        "applescript": "osascript",
-        "clojure": "lein exec",
-        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
-        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
-        "racket": "racket",
-        "scheme": "csi -script",
-        "ahk": "autohotkey",
-        "autoit": "autoit3",
-        "dart": "dart",
-        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
-        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
-        "haskell": "runhaskell",
-        "nim": "nim compile --verbosity:0 --hints:off --run",
-        "lisp": "sbcl --script",
-        "kit": "kitc --run",
-        "v": "v run",
-        "sass": "sass --style expanded",
-        "scss": "scss --style expanded",
-        "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
-        "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "sml": "cd $dir && sml $fileName"
-    },
     "vsicons.dontShowNewVersionMessage": true,
     "tabnine.experimentalAutoImports": true,
     "[python]": {},
     "mdb.confirmRunAll": false,
     "code-runner.terminalRoot": "/",
-
-    // My settings
-
-    "editor.fontFamily": "JetBrains Mono", // Font Family
+    "editor.fontFamily": "JetBrainsMono Nerd Font", // "JetBrains Mono"
     // "editor.fontFamily": "Source Code Pro",
     // "editor.fontFamily": "Fira Code", // Font Family
     "editor.fontWeight": "300",
-    // "editor.fontWeight": "normal",
     "editor.fontLigatures": true,
-    "terminal.integrated.fontFamily": "JetBrains Mono",
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
     "editor.fontSize": 12,
-
-    "editor.lineHeight": 24, // lineHeight
+    "editor.lineHeight": 24,
     "explorer.decorations.badges": false,
-
-    // VScode Theme
-    "workbench.colorTheme": "GitHub Dark Default",
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -242,8 +168,6 @@
         "markdown": false,
         "scminput": false
     },
-    // "workbench.colorTheme": "Visual Studio Dark - C++",
-    "code-runner.ignoreSelection": true,
     "editor.accessibilityPageSize": 12,
     "[javascriptreact]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
@@ -259,8 +183,36 @@
         "20.41.249.65": "linux"
     },
     "markdown-preview-enhanced.previewTheme": "atom-dark.css",
-    "roo-cline.allowedCommands": [
+    "roo-cline.allowedCommands": ["*"],
+    "roo-cline.deniedCommands": [],
+    "database-client.autoSync": true,
+    "editor.formatOnSave": true,
+    "kiroAgent.modelSelection": "claude-sonnet-4.5",
+    "kiroAgent.trustedCommands": [
+        "venv\\Scripts\\activate & python pyinstxtractor.py main-gui.exe",
+        "node --version",
+        "npm --version",
         "*"
     ],
-    "roo-cline.deniedCommands": []
+    "kiroAgent.enableCodebaseIndexing": true,
+    "kiroAgent.trustedTools": ["webFetch", "remote_web_search"],
+    "kiroAgent.agentAutonomy": "Autopilot",
+    "terminal.integrated.env.windows": {
+        "MSYS_NO_PATHCONV": "1"
+    },
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.fileDirectoryAsCwd": false,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.ignoreSelection": true,
+    "code-runner.executorMap": {
+        "javascript": "node $fileName",
+        "java": "javac $fileName ; java $fileNameWithoutExt",
+        "c": "gcc $fileName -o $fileNameWithoutExt ; .\\$fileNameWithoutExt",
+        "cpp": "g++ $fileName -o $fileNameWithoutExt ; .\\$fileNameWithoutExt",
+        "python": "python -u $fileName",
+        "go": "go run $fileName",
+        "bat": "cmd /c $fileName",
+        "shellscript": "bash $fileName",
+        "typescript": "ts-node $fileName"
+    }
 }
