@@ -8,13 +8,19 @@ See [POWERSHELL-PROFILE-FEATURES.md](POWERSHELL-PROFILE-FEATURES.md) for complet
 
 **Required:**
 ```powershell
+# Modern PowerShell (v7+)
 winget install Microsoft.PowerShell
-```
 
-**Optional (recommended):**
-```powershell
+# Cross-shell prompt with Git integration
 winget install Starship.Starship
+
+# Smart directory jumping (z command)
 winget install ajeetdsouza.zoxide
+
+# Fast search tool (grep alias)
+winget install BurntSushi.ripgrep.MSVC
+
+# Version control
 winget install Git.Git
 ```
 

@@ -33,7 +33,7 @@ function trash($path) {
 Set-Alias -Name e -Value ii
 
 # Unix-like commands
-function grep($regex, $dir) { if ($dir) { Get-ChildItem $dir | select-string $regex } else { $input | select-string $regex } }
+Set-Alias -Name grep -Value rg
 function df { get-volume }
 function sed($file, $find, $replace) { (Get-Content $file).replace("$find", $replace) | Set-Content $file }
 function which($name) { Get-Command $name | Select-Object -ExpandProperty Definition }
