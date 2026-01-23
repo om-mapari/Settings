@@ -1,10 +1,7 @@
-🚀 My Windows Setup for Development (After Years of Tweaking)
+🚀 My Windows Setup for Power Users (After Years of Tweaking)
 
 > "I’ve spent 8 years tweaking Windows so you don’t have to fight with the defaults." ⭐
 
-Look, I get it. You just installed Windows and now you're staring at that Fisher-Price UI wondering why your terminal looks like it's from 2003. Been there. This repo is everything I wish existed when I started - PowerShell that doesn't make you want to cry, a terminal that actually looks good, and configs that just work.
-
-Clone it. Copy the stuff. Your setup will stop sucking in about an hour.
 
 ## 🧠 My Rules
 
@@ -12,17 +9,16 @@ Clone it. Copy the stuff. Your setup will stop sucking in about an hour.
 - Keyboard shortcuts > mouse. Always
 - Dark mode everything. Light mode users scare me
 - If you're doing something twice, automate it
-- Every tool here earned its spot
+- Config files > GUI settings 
+- Defaults are suggestions, not laws
 
 ## ⚠️ Heads Up
 
-- Backup your configs first. Or don't, I'm not your mom
+- Backup your configs first. Or don't, I'm not your mom (use Windows create restore point)
 - Some stuff needs admin rights
 - WindHawk mods might break on Windows updates (still worth it)
-- The `lazyg` command is dangerous if you're not paying attention
-- Once you start using zoxide, regular `cd` will feel broken
 
-## � The Arsenal
+## 💣 The Arsenal
 
 | Tool | What It Does (In Human) |
 |------|-------------|
@@ -95,7 +91,7 @@ Copy-Item "vscode/keybindings.json" "$env:APPDATA\Code\User\" -Force
 # Restart VSCode and enjoy:
 # - JetBrains Mono with ligatures (because => looks better than =>)
 # - GitHub Dark theme (your retinas will thank you)
-# - Code Runner (F5 to run anything, anywhere)
+# - Code Runner (ctrl + ' to run anything, anywhere)
 # - No annoying confirmations (we live dangerously here)
 ```
 
@@ -166,7 +162,7 @@ start explorer.exe
 - **Volume scroll** - Scroll on taskbar = volume control (why isn't this default?)
 - **Better file sizes** - See "1.5 GB" not "1,572,864 KB" (thank you, sanity)
 
-## � The Map (Where Everything Lives)
+## 🧰 The Map (Where Everything Lives)
 
 ```
 Settings/
@@ -205,7 +201,7 @@ Shoutout to the people who built the tools that make this possible:
 
 <div align="center">
 
-**Made with caffeine and spite for Windows defaults**
+**Refined by experience**
 
 *Star this if it saved you some pain* ⭐
 
