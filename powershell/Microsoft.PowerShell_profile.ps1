@@ -158,5 +158,5 @@ function Show-Help {
     Write-Host "Unix: " -NoNewline -ForegroundColor Cyan; Write-Host "head tail grep sed which df unzip"
     Write-Host "Proc: " -NoNewline -ForegroundColor Cyan; Write-Host "pgrep pkill k9"
     Write-Host "Sys:  " -NoNewline -ForegroundColor Cyan; Write-Host "admin/su uptime sysinfo pubip flushdns cpy pst"
-    Write-Host "Keys: " -NoNewline -ForegroundColor Cyan; Write-Host "↑/↓ history | Tab complete | Ctrl+Z undo | Ctrl+Y redo`n"
+    Write-Host "Keys: " -NoNewline -ForegroundColor Cyan; Write-Host "Up/Down history | Tab complete | Ctrl+Z undo | Ctrl+Y redo`n"
 }
